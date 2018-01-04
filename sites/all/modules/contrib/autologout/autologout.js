@@ -22,7 +22,7 @@
       // Prevent settings being overriden by ajax callbacks by cloning the settings.
       localSettings = jQuery.extend(true, {}, settings.autologout);
 
-      console.log(Drupal.settings);
+      // console.log(localSettings);
 
       if (localSettings.refresh_only) {
         // On pages that cannot be logged out of don't start the logout countdown.
@@ -190,7 +190,7 @@
             window.location = localSettings.redirect_url;
           }
 
-          console.log(response);
+          // console.log(response);
 
           callback(response[2].settings.time);
 

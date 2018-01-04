@@ -5,7 +5,13 @@
       $('h1').hide();
 
       var car = {};
-      car.fiat = {model:"500", color:"white", speed:"125", honk: function(){$('a#logo').hide();}};
+      car.fiat = {
+        model:"500",
+        color:"white",
+        speed:"125",
+        honk: function(){$('a#logo').hide();},
+        brag: function(){return this.color + this.speed;}
+      };
       car.bmw = {model:"725", color:"black", speed:"205"};
       console.log(car.bmw['speed']);
       console.log(car.fiat.brag());
