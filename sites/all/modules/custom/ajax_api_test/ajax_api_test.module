@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_init()
+ */
+function ajax_api_test_init() {
+    drupal_add_js(drupal_get_path('module', 'ajax_api_test') . '/js/ajax_api_test.js' );
+}

@@ -1,0 +1,5 @@
+name = Ajax API Test
+description = Test module to get acquainted with the Ajax API
+core = 7.x
+version = VERSION
+package = Learning coding
