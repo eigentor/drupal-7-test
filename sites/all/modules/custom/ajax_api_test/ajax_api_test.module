@@ -27,8 +27,10 @@ function ajax_api_test_menu(){
  */
 
 function my_module_remote_ajax(){
-
-  $html = 'Load View here';
+  $view = views_get_view('news');
+  $view->set_display('page');
+  $view->execute();
+  $html = $view->render();
   $selector = '#my-test-container';
   $messages = theme('status_messages');
   $commands = array();
@@ -36,6 +38,5 @@ function my_module_remote_ajax(){
   $commands[] = ajax_command_html($selector, $html);
   print ajax_render($commands);
   drupal_exit();
-
 
 }
