@@ -1,0 +1,8 @@
+<?php
+
+function tommi_page_menu(){
+  $items['tommi_page/page_one'] = array(
+    'title' => 'Tommis Page',
+    'page callback'
+  );
+}
