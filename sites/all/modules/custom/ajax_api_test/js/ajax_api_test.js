@@ -19,8 +19,9 @@
       $('#my-test-container').once('my-test-container', function(){
         var base = $(this).attr('id');
         var element_settings = {
-          url: 'http://drupal-7-test.test/' + 'ajax/remote',
+          url: Drupal.settings.basePath + 'ajax/remote',
           event : 'click',
+          method: 'append',
           progress: {
             type: 'throbber'
           },
